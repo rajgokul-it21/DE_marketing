@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: fct_campaign_roi
+    description: ROI per campaign
+  - name: fct_monthly_spend_by_channel
+    description: Monthly spend per channel
+  - name: fct_channel_conversion_rate
+    description: Conversion rate per channel
+  - name: fct_campaign_duration_cost
+    description: Duration and cost per day of campaigns
+  - name: fct_inactive_campaigns
+    description: Campaigns with no leads or no conversions
+  - name: fct_channel_spend_efficiency
+    description: Spend per lead per channel
+  - name: fct_lead_time_to_convert
+    description: Average time to convert leads
+  - name: fct_campaign_channel_effectiveness
+    description: Campaign effectiveness by channel
+  - name: fct_active_campaign_revenue
+    description: Revenue from active campaigns
+  - name: fct_total_revenue_by_campaign
+    description: Total revenue per campaign

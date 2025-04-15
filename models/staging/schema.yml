@@ -1,0 +1,44 @@
+version: 2
+
+sources:
+  - name: marketing
+    schema: raw
+    database: MARKETING
+    tables:
+      - name: raw_campaigns
+      - name: raw_channels
+      - name: raw_leads
+      - name: raw_revenue
+      - name: raw_spend
+
+models:
+  - name: stg_campaigns
+    columns:
+      - name: campaign_id
+        tests:
+          - not_null
+          - unique
+      - name: status
+        tests:
+          - accepted_values:
+              values: ['planned', 'active', 'completed']
+
+  - name: stg_channels
+    description: Cleaned channels data
+
+  - name: stg_leads
+    columns:
+      - name: lead_id
+        tests:
+          - unique
+          - not_null
+      - name: is_converted
+        tests:
+          - accepted_values:
+              values: [true, false, null]
+
+  - name: stg_revenue
+    description: Cleaned revenue data
+
+  - name: stg_spend
+    description: Cleaned spend data
