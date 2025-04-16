@@ -1,5 +1,3 @@
--- models/final/fct_campaign_roi.sql
-
 with revenue as (
     select
         campaign_id,

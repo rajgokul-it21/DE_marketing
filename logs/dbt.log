@@ -8964,3 +8964,340 @@ KeyboardInterrupt
 [0m15:04:14.934684 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D4FFB37560>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D481DD47D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D481DB38C0>]}
 [0m15:04:14.935681 [debug] [MainThread]: Flushing usage events
 [0m15:04:15.870820 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:53:24.230634 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000181E69E8DA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000181E69E9010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000181E69E8EF0>]}
+
+
+============================== 10:53:24.240485 | e3815777-621e-46da-b75f-388fcb6343d3 ==============================
+[0m10:53:24.240485 [info ] [MainThread]: Running with dbt=1.9.4
+[0m10:53:24.240485 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\RajgokulRM\\.dbt', 'log_path': 'C:\\Users\\RajgokulRM\\Documents\\DE_FINAL\\marketing\\logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt snapshot', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m10:53:28.533557 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e3815777-621e-46da-b75f-388fcb6343d3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000181F3D6F170>]}
+[0m10:53:28.606594 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e3815777-621e-46da-b75f-388fcb6343d3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000181E664FA40>]}
+[0m10:53:28.608601 [info ] [MainThread]: Registered adapter: snowflake=1.9.2
+[0m10:53:29.413287 [debug] [MainThread]: checksum: b5597158181700c50f5bc1c71fe28b37a6fb85633dc5323885263678b6bc782c, vars: {}, profile: , target: , version: 1.9.4
+[0m10:53:29.655609 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m10:53:29.655609 [debug] [MainThread]: Partial parsing: updated file: Marketing://snapshots\campaign_snapshot.sql
+[0m10:53:30.036655 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e3815777-621e-46da-b75f-388fcb6343d3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000181F45D11C0>]}
+[0m10:53:30.149350 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\RajgokulRM\Documents\DE_FINAL\marketing\target\manifest.json
+[0m10:53:30.199247 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\RajgokulRM\Documents\DE_FINAL\marketing\target\semantic_manifest.json
+[0m10:53:30.500558 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e3815777-621e-46da-b75f-388fcb6343d3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000181F43D7110>]}
+[0m10:53:30.501785 [info ] [MainThread]: Found 20 models, 6 data tests, 1 snapshot, 5 sources, 479 macros
+[0m10:53:30.502689 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e3815777-621e-46da-b75f-388fcb6343d3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000181F460EAB0>]}
+[0m10:53:30.505596 [info ] [MainThread]: 
+[0m10:53:30.506594 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m10:53:30.507596 [info ] [MainThread]: 
+[0m10:53:30.508596 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m10:53:30.509595 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_MARKETING'
+[0m10:53:34.146468 [debug] [ThreadPool]: Using snowflake connection "list_MARKETING"
+[0m10:53:34.146468 [debug] [ThreadPool]: On list_MARKETING: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Marketing", "target_name": "dev", "connection_name": "list_MARKETING"} */
+show terse schemas in database MARKETING
+    limit 10000
+[0m10:53:34.147470 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:53:36.315008 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 2.169 seconds
+[0m10:53:36.319016 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_MARKETING, now create_MARKETING_snapshots)
+[0m10:53:36.319016 [debug] [ThreadPool]: Creating schema "database: "MARKETING"
+schema: "snapshots"
+"
+[0m10:53:36.327032 [debug] [ThreadPool]: Using snowflake connection "create_MARKETING_snapshots"
+[0m10:53:36.327032 [debug] [ThreadPool]: On create_MARKETING_snapshots: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Marketing", "target_name": "dev", "connection_name": "create_MARKETING_snapshots"} */
+create schema if not exists MARKETING.snapshots
+[0m10:53:36.676774 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.349 seconds
+[0m10:53:36.686738 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_MARKETING_snapshots'
+[0m10:53:36.699617 [debug] [ThreadPool]: Using snowflake connection "list_MARKETING_snapshots"
+[0m10:53:36.700616 [debug] [ThreadPool]: On list_MARKETING_snapshots: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Marketing", "target_name": "dev", "connection_name": "list_MARKETING_snapshots"} */
+show objects in MARKETING.snapshots limit 10000;
+[0m10:53:36.700616 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:53:37.703751 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 1.003 seconds
+[0m10:53:37.703751 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_MARKETING_snapshots, now list_MARKETING_marketing)
+[0m10:53:37.703751 [debug] [ThreadPool]: Using snowflake connection "list_MARKETING_marketing"
+[0m10:53:37.703751 [debug] [ThreadPool]: On list_MARKETING_marketing: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Marketing", "target_name": "dev", "connection_name": "list_MARKETING_marketing"} */
+show objects in MARKETING.marketing limit 10000;
+[0m10:53:37.951964 [debug] [ThreadPool]: SQL status: SUCCESS 20 in 0.242 seconds
+[0m10:53:38.206687 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e3815777-621e-46da-b75f-388fcb6343d3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000181E74C08F0>]}
+[0m10:53:38.219029 [debug] [Thread-1 (]: Began running node snapshot.Marketing.campaign_snapshot
+[0m10:53:38.219994 [info ] [Thread-1 (]: 1 of 1 START snapshot snapshots.campaign_snapshot .............................. [RUN]
+[0m10:53:38.222020 [debug] [Thread-1 (]: Acquiring new snowflake connection 'snapshot.Marketing.campaign_snapshot'
+[0m10:53:38.222020 [debug] [Thread-1 (]: Began compiling node snapshot.Marketing.campaign_snapshot
+[0m10:53:38.232405 [debug] [Thread-1 (]: Began executing node snapshot.Marketing.campaign_snapshot
+[0m10:53:38.339418 [debug] [Thread-1 (]: Using snowflake connection "snapshot.Marketing.campaign_snapshot"
+[0m10:53:38.340418 [debug] [Thread-1 (]: On snapshot.Marketing.campaign_snapshot: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Marketing", "target_name": "dev", "node_id": "snapshot.Marketing.campaign_snapshot"} */
+/* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Marketing", "target_name": "dev", "node_id": "snapshot.Marketing.campaign_snapshot"} */
+select * from (
+        
+    
+
+    select *,
+        md5(coalesce(cast(campaign_id as varchar ), '')
+         || '|' || coalesce(cast(to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as varchar ), '')
+        ) as dbt_scd_id,
+        to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_updated_at,
+        to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_valid_from,
+        
+  
+  coalesce(nullif(to_timestamp_ntz(convert_timezone('UTC', current_timestamp())), to_timestamp_ntz(convert_timezone('UTC', current_timestamp()))), null)
+  as dbt_valid_to
+from (
+        
+    
+
+    SELECT * FROM MARKETING.marketing.stg_campaigns
+
+    ) sbq
+
+
+
+    ) as __dbt_sbq
+    where false
+    limit 0
+[0m10:53:38.341419 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m10:53:39.767243 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 1.426 seconds
+[0m10:53:39.771266 [debug] [Thread-1 (]: Using snowflake connection "snapshot.Marketing.campaign_snapshot"
+[0m10:53:39.772268 [debug] [Thread-1 (]: On snapshot.Marketing.campaign_snapshot: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Marketing", "target_name": "dev", "node_id": "snapshot.Marketing.campaign_snapshot"} */
+/* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Marketing", "target_name": "dev", "node_id": "snapshot.Marketing.campaign_snapshot"} */
+select * from (
+        select to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_snapshot_time
+    ) as __dbt_sbq
+    where false
+    limit 0
+[0m10:53:39.950494 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.178 seconds
+[0m10:53:39.951494 [debug] [Thread-1 (]: Writing runtime sql for node "snapshot.Marketing.campaign_snapshot"
+[0m10:53:39.953494 [debug] [Thread-1 (]: Using snowflake connection "snapshot.Marketing.campaign_snapshot"
+[0m10:53:39.954494 [debug] [Thread-1 (]: On snapshot.Marketing.campaign_snapshot: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Marketing", "target_name": "dev", "node_id": "snapshot.Marketing.campaign_snapshot"} */
+create or replace transient table MARKETING.snapshots.campaign_snapshot
+         as
+        (
+    
+
+    select *,
+        md5(coalesce(cast(campaign_id as varchar ), '')
+         || '|' || coalesce(cast(to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as varchar ), '')
+        ) as dbt_scd_id,
+        to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_updated_at,
+        to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_valid_from,
+        
+  
+  coalesce(nullif(to_timestamp_ntz(convert_timezone('UTC', current_timestamp())), to_timestamp_ntz(convert_timezone('UTC', current_timestamp()))), null)
+  as dbt_valid_to
+from (
+        
+    
+
+    SELECT * FROM MARKETING.marketing.stg_campaigns
+
+    ) sbq
+
+
+
+        );
+[0m10:53:41.028565 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.074 seconds
+[0m10:53:41.065908 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e3815777-621e-46da-b75f-388fcb6343d3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000181E6936720>]}
+[0m10:53:41.066916 [info ] [Thread-1 (]: 1 of 1 OK snapshotted snapshots.campaign_snapshot .............................. [[32mSUCCESS 1[0m in 2.84s]
+[0m10:53:41.067562 [debug] [Thread-1 (]: Finished running node snapshot.Marketing.campaign_snapshot
+[0m10:53:41.069569 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m10:53:41.069569 [debug] [MainThread]: Connection 'create_MARKETING_snapshots' was left open.
+[0m10:53:41.070615 [debug] [MainThread]: On create_MARKETING_snapshots: Close
+[0m10:53:41.394181 [debug] [MainThread]: Connection 'list_MARKETING_marketing' was left open.
+[0m10:53:41.394181 [debug] [MainThread]: On list_MARKETING_marketing: Close
+[0m10:53:41.724674 [debug] [MainThread]: Connection 'snapshot.Marketing.campaign_snapshot' was left open.
+[0m10:53:41.724674 [debug] [MainThread]: On snapshot.Marketing.campaign_snapshot: Close
+[0m10:53:42.048158 [info ] [MainThread]: 
+[0m10:53:42.049044 [info ] [MainThread]: Finished running 1 snapshot in 0 hours 0 minutes and 11.54 seconds (11.54s).
+[0m10:53:42.051709 [debug] [MainThread]: Command end result
+[0m10:53:42.078922 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\RajgokulRM\Documents\DE_FINAL\marketing\target\manifest.json
+[0m10:53:42.095051 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\RajgokulRM\Documents\DE_FINAL\marketing\target\semantic_manifest.json
+[0m10:53:42.095051 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\RajgokulRM\Documents\DE_FINAL\marketing\target\run_results.json
+[0m10:53:42.095051 [info ] [MainThread]: 
+[0m10:53:42.095051 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m10:53:42.105674 [info ] [MainThread]: 
+[0m10:53:42.105674 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m10:53:42.105674 [debug] [MainThread]: Command `dbt snapshot` succeeded at 10:53:42.105674 after 18.10 seconds
+[0m10:53:42.105674 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000181E7143E60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000181F30C2030>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000181E7369670>]}
+[0m10:53:42.105674 [debug] [MainThread]: Flushing usage events
+[0m10:53:43.323037 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:46:16.184652 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F003D76420>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F003D76B40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F003F95C70>]}
+
+
+============================== 15:46:16.184652 | e06c6891-896e-436d-b55a-7de8ac97dba5 ==============================
+[0m15:46:16.184652 [info ] [MainThread]: Running with dbt=1.9.4
+[0m15:46:16.200595 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\RajgokulRM\\.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'C:\\Users\\RajgokulRM\\Documents\\DE_FINAL\\marketing\\logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt snapshot', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:46:22.626867 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e06c6891-896e-436d-b55a-7de8ac97dba5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0104DDFA0>]}
+[0m15:46:22.706253 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e06c6891-896e-436d-b55a-7de8ac97dba5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0111BC7D0>]}
+[0m15:46:22.706253 [info ] [MainThread]: Registered adapter: snowflake=1.9.2
+[0m15:46:24.062567 [debug] [MainThread]: checksum: b5597158181700c50f5bc1c71fe28b37a6fb85633dc5323885263678b6bc782c, vars: {}, profile: , target: , version: 1.9.4
+[0m15:46:24.357234 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m15:46:24.358234 [debug] [MainThread]: Partial parsing: updated file: Marketing://snapshots\campaign_snapshot.sql
+[0m15:46:24.708727 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e06c6891-896e-436d-b55a-7de8ac97dba5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F011811190>]}
+[0m15:46:24.927092 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\RajgokulRM\Documents\DE_FINAL\marketing\target\manifest.json
+[0m15:46:24.979970 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\RajgokulRM\Documents\DE_FINAL\marketing\target\semantic_manifest.json
+[0m15:46:25.067724 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e06c6891-896e-436d-b55a-7de8ac97dba5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F01172CC80>]}
+[0m15:46:25.067724 [info ] [MainThread]: Found 20 models, 6 data tests, 1 snapshot, 5 sources, 479 macros
+[0m15:46:25.073091 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e06c6891-896e-436d-b55a-7de8ac97dba5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F00FD9EE40>]}
+[0m15:46:25.076829 [info ] [MainThread]: 
+[0m15:46:25.076829 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:46:25.076829 [info ] [MainThread]: 
+[0m15:46:25.079207 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m15:46:25.080712 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_MARKETING'
+[0m15:46:29.462911 [debug] [ThreadPool]: Using snowflake connection "list_MARKETING"
+[0m15:46:29.462911 [debug] [ThreadPool]: On list_MARKETING: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Marketing", "target_name": "dev", "connection_name": "list_MARKETING"} */
+show terse schemas in database MARKETING
+    limit 10000
+[0m15:46:29.463910 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:46:31.118426 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 1.669 seconds
+[0m15:46:31.135114 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_MARKETING_snapshots'
+[0m15:46:31.149476 [debug] [ThreadPool]: Using snowflake connection "list_MARKETING_snapshots"
+[0m15:46:31.149476 [debug] [ThreadPool]: On list_MARKETING_snapshots: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Marketing", "target_name": "dev", "connection_name": "list_MARKETING_snapshots"} */
+show objects in MARKETING.snapshots limit 10000;
+[0m15:46:31.149476 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:46:32.136221 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.986 seconds
+[0m15:46:32.151581 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_MARKETING_snapshots, now list_MARKETING_marketing)
+[0m15:46:32.151581 [debug] [ThreadPool]: Using snowflake connection "list_MARKETING_marketing"
+[0m15:46:32.151581 [debug] [ThreadPool]: On list_MARKETING_marketing: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Marketing", "target_name": "dev", "connection_name": "list_MARKETING_marketing"} */
+show objects in MARKETING.marketing limit 10000;
+[0m15:46:32.383517 [debug] [ThreadPool]: SQL status: SUCCESS 20 in 0.237 seconds
+[0m15:46:32.417681 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e06c6891-896e-436d-b55a-7de8ac97dba5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F011521070>]}
+[0m15:46:32.436298 [debug] [Thread-1 (]: Began running node snapshot.Marketing.campaign_snapshot
+[0m15:46:32.436298 [info ] [Thread-1 (]: 1 of 1 START snapshot snapshots.campaign_snapshot .............................. [RUN]
+[0m15:46:32.436298 [debug] [Thread-1 (]: Acquiring new snowflake connection 'snapshot.Marketing.campaign_snapshot'
+[0m15:46:32.436298 [debug] [Thread-1 (]: Began compiling node snapshot.Marketing.campaign_snapshot
+[0m15:46:32.627744 [debug] [Thread-1 (]: Compilation Error in snapshot campaign_snapshot (snapshots\campaign_snapshot.sql)
+  'snapshot_check' is undefined. This can happen when calling a macro that does not exist. Check for typos and/or install package dependencies with "dbt deps".
+[0m15:46:32.630744 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e06c6891-896e-436d-b55a-7de8ac97dba5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0116AA8A0>]}
+[0m15:46:32.631746 [error] [Thread-1 (]: 1 of 1 ERROR snapshotting snapshots.campaign_snapshot .......................... [[31mERROR[0m in 0.19s]
+[0m15:46:32.632752 [debug] [Thread-1 (]: Finished running node snapshot.Marketing.campaign_snapshot
+[0m15:46:32.633745 [debug] [Thread-4 (]: Marking all children of 'snapshot.Marketing.campaign_snapshot' to be skipped because of status 'error'.  Reason: Compilation Error in snapshot campaign_snapshot (snapshots\campaign_snapshot.sql)
+  'snapshot_check' is undefined. This can happen when calling a macro that does not exist. Check for typos and/or install package dependencies with "dbt deps"..
+[0m15:46:32.635745 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:46:32.637095 [debug] [MainThread]: Connection 'list_MARKETING' was left open.
+[0m15:46:32.637095 [debug] [MainThread]: On list_MARKETING: Close
+[0m15:46:32.965098 [debug] [MainThread]: Connection 'list_MARKETING_marketing' was left open.
+[0m15:46:32.965098 [debug] [MainThread]: On list_MARKETING_marketing: Close
+[0m15:46:33.282390 [debug] [MainThread]: Connection 'snapshot.Marketing.campaign_snapshot' was properly closed.
+[0m15:46:33.282390 [info ] [MainThread]: 
+[0m15:46:33.282390 [info ] [MainThread]: Finished running 1 snapshot in 0 hours 0 minutes and 8.21 seconds (8.21s).
+[0m15:46:33.282390 [debug] [MainThread]: Command end result
+[0m15:46:33.321702 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\RajgokulRM\Documents\DE_FINAL\marketing\target\manifest.json
+[0m15:46:33.338613 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\RajgokulRM\Documents\DE_FINAL\marketing\target\semantic_manifest.json
+[0m15:46:33.338613 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\RajgokulRM\Documents\DE_FINAL\marketing\target\run_results.json
+[0m15:46:33.338613 [info ] [MainThread]: 
+[0m15:46:33.338613 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m15:46:33.338613 [info ] [MainThread]: 
+[0m15:46:33.338613 [error] [MainThread]:   Compilation Error in snapshot campaign_snapshot (snapshots\campaign_snapshot.sql)
+  'snapshot_check' is undefined. This can happen when calling a macro that does not exist. Check for typos and/or install package dependencies with "dbt deps".
+[0m15:46:33.338613 [info ] [MainThread]: 
+[0m15:46:33.338613 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m15:46:33.354560 [debug] [MainThread]: Command `dbt snapshot` failed at 15:46:33.353809 after 17.65 seconds
+[0m15:46:33.354560 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0043AB740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F003AE8FE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F003AEB0B0>]}
+[0m15:46:33.354560 [debug] [MainThread]: Flushing usage events
+[0m15:46:34.441229 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:47:56.233772 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AB7A789040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AB7A1F0740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AB77954440>]}
+
+
+============================== 15:47:56.233772 | f0edd35e-a199-4712-a13d-d5ed11166dcf ==============================
+[0m15:47:56.233772 [info ] [MainThread]: Running with dbt=1.9.4
+[0m15:47:56.249493 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'C:\\Users\\RajgokulRM\\Documents\\DE_FINAL\\marketing\\logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\RajgokulRM\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt deps', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m15:47:56.406710 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f0edd35e-a199-4712-a13d-d5ed11166dcf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AB7AF89430>]}
+[0m15:47:56.456495 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m15:47:56.458424 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m15:47:56.459423 [debug] [MainThread]: Command `dbt deps` succeeded at 15:47:56.459423 after 0.39 seconds
+[0m15:47:56.459423 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AB7A789040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AB7B2D8470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AB7B23BAA0>]}
+[0m15:47:56.460455 [debug] [MainThread]: Flushing usage events
+[0m15:47:57.364891 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:48:20.643176 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D2051EFB30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D2057208C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D208B15E80>]}
+
+
+============================== 15:48:20.643176 | 9f6cdac8-13d5-4a61-a1d0-eceaa95ec6ea ==============================
+[0m15:48:20.643176 [info ] [MainThread]: Running with dbt=1.9.4
+[0m15:48:20.643176 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\RajgokulRM\\.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Users\\RajgokulRM\\Documents\\DE_FINAL\\marketing\\logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt deps', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:48:20.810600 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9f6cdac8-13d5-4a61-a1d0-eceaa95ec6ea', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D2086B11F0>]}
+[0m15:48:20.861029 [debug] [MainThread]: Set downloads directory='C:\Users\RAJGOK~1\AppData\Local\Temp\dbt-downloads-hcm7le3t'
+[0m15:48:20.861029 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m15:48:21.228381 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m15:48:21.243221 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m15:48:21.698219 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m15:48:21.714008 [info ] [MainThread]: Updating lock file in file path: C:\Users\RajgokulRM\Documents\DE_FINAL\Marketing/package-lock.yml
+[0m15:48:21.730081 [debug] [MainThread]: Set downloads directory='C:\Users\RAJGOK~1\AppData\Local\Temp\dbt-downloads-8k1z1sqe'
+[0m15:48:21.734072 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m15:48:23.325004 [info ] [MainThread]: Installed from version 0.9.0
+[0m15:48:23.326000 [info ] [MainThread]: Updated version available: 1.3.0
+[0m15:48:23.328002 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '9f6cdac8-13d5-4a61-a1d0-eceaa95ec6ea', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D2090790A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D208FDA4B0>]}
+[0m15:48:23.328002 [info ] [MainThread]: 
+[0m15:48:23.329001 [info ] [MainThread]: Updates available for packages: ['dbt-labs/dbt_utils']                 
+Update your versions in packages.yml, then run dbt deps
+[0m15:48:23.333000 [debug] [MainThread]: Command `dbt deps` succeeded at 15:48:23.332003 after 2.85 seconds
+[0m15:48:23.333000 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D2088E72F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D20818F9E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D20818EF30>]}
+[0m15:48:23.334001 [debug] [MainThread]: Flushing usage events
+[0m15:48:24.201514 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:48:30.620652 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D732BF12B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D73047D010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D73047C620>]}
+
+
+============================== 15:48:30.620652 | 4209906c-b679-4385-94c8-9b553c50267f ==============================
+[0m15:48:30.620652 [info ] [MainThread]: Running with dbt=1.9.4
+[0m15:48:30.620652 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\RajgokulRM\\.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'C:\\Users\\RajgokulRM\\Documents\\DE_FINAL\\marketing\\logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt snapshot', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:48:31.733816 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4209906c-b679-4385-94c8-9b553c50267f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D73FA5C890>]}
+[0m15:48:31.812234 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '4209906c-b679-4385-94c8-9b553c50267f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D732F49A30>]}
+[0m15:48:31.815234 [info ] [MainThread]: Registered adapter: snowflake=1.9.2
+[0m15:48:32.397323 [debug] [MainThread]: checksum: b5597158181700c50f5bc1c71fe28b37a6fb85633dc5323885263678b6bc782c, vars: {}, profile: , target: , version: 1.9.4
+[0m15:48:32.536456 [info ] [MainThread]: Unable to do partial parsing because a project dependency has been added
+[0m15:48:32.536456 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '4209906c-b679-4385-94c8-9b553c50267f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D73FF12F60>]}
+[0m15:48:35.641628 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '4209906c-b679-4385-94c8-9b553c50267f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D74123A360>]}
+[0m15:48:35.768385 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\RajgokulRM\Documents\DE_FINAL\marketing\target\manifest.json
+[0m15:48:35.768385 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\RajgokulRM\Documents\DE_FINAL\marketing\target\semantic_manifest.json
+[0m15:48:35.799879 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '4209906c-b679-4385-94c8-9b553c50267f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D74137E240>]}
+[0m15:48:35.799879 [info ] [MainThread]: Found 20 models, 1 snapshot, 6 data tests, 5 sources, 676 macros
+[0m15:48:35.799879 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4209906c-b679-4385-94c8-9b553c50267f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D741147E30>]}
+[0m15:48:35.799879 [info ] [MainThread]: 
+[0m15:48:35.799879 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:48:35.815775 [info ] [MainThread]: 
+[0m15:48:35.815775 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m15:48:35.815775 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_MARKETING'
+[0m15:48:35.926725 [debug] [ThreadPool]: Using snowflake connection "list_MARKETING"
+[0m15:48:35.926725 [debug] [ThreadPool]: On list_MARKETING: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Marketing", "target_name": "dev", "connection_name": "list_MARKETING"} */
+show terse schemas in database MARKETING
+    limit 10000
+[0m15:48:35.926725 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:48:37.192251 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 1.255 seconds
+[0m15:48:37.204965 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_MARKETING_snapshots'
+[0m15:48:37.208227 [debug] [ThreadPool]: Using snowflake connection "list_MARKETING_snapshots"
+[0m15:48:37.208227 [debug] [ThreadPool]: On list_MARKETING_snapshots: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Marketing", "target_name": "dev", "connection_name": "list_MARKETING_snapshots"} */
+show objects in MARKETING.snapshots limit 10000;
+[0m15:48:37.208227 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:48:38.174954 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.956 seconds
+[0m15:48:38.176989 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_MARKETING_snapshots, now list_MARKETING_marketing)
+[0m15:48:38.180424 [debug] [ThreadPool]: Using snowflake connection "list_MARKETING_marketing"
+[0m15:48:38.181423 [debug] [ThreadPool]: On list_MARKETING_marketing: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Marketing", "target_name": "dev", "connection_name": "list_MARKETING_marketing"} */
+show objects in MARKETING.marketing limit 10000;
+[0m15:48:38.451068 [debug] [ThreadPool]: SQL status: SUCCESS 20 in 0.272 seconds
+[0m15:48:38.456324 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4209906c-b679-4385-94c8-9b553c50267f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D7412CC4A0>]}
+[0m15:48:38.466114 [debug] [Thread-1 (]: Began running node snapshot.Marketing.campaign_snapshot
+[0m15:48:38.467117 [info ] [Thread-1 (]: 1 of 1 START snapshot snapshots.campaign_snapshot .............................. [RUN]
+[0m15:48:38.468116 [debug] [Thread-1 (]: Acquiring new snowflake connection 'snapshot.Marketing.campaign_snapshot'
+[0m15:48:38.468116 [debug] [Thread-1 (]: Began compiling node snapshot.Marketing.campaign_snapshot
+[0m15:48:38.484795 [debug] [Thread-1 (]: Compilation Error in snapshot campaign_snapshot (snapshots\campaign_snapshot.sql)
+  'snapshot_check' is undefined. This can happen when calling a macro that does not exist. Check for typos and/or install package dependencies with "dbt deps".
+[0m15:48:38.486795 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '4209906c-b679-4385-94c8-9b553c50267f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D7323E60C0>]}
+[0m15:48:38.487795 [error] [Thread-1 (]: 1 of 1 ERROR snapshotting snapshots.campaign_snapshot .......................... [[31mERROR[0m in 0.02s]
+[0m15:48:38.489800 [debug] [Thread-1 (]: Finished running node snapshot.Marketing.campaign_snapshot
+[0m15:48:38.491795 [debug] [Thread-4 (]: Marking all children of 'snapshot.Marketing.campaign_snapshot' to be skipped because of status 'error'.  Reason: Compilation Error in snapshot campaign_snapshot (snapshots\campaign_snapshot.sql)
+  'snapshot_check' is undefined. This can happen when calling a macro that does not exist. Check for typos and/or install package dependencies with "dbt deps"..
+[0m15:48:38.493182 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:48:38.494190 [debug] [MainThread]: Connection 'list_MARKETING' was left open.
+[0m15:48:38.495189 [debug] [MainThread]: On list_MARKETING: Close
+[0m15:48:38.821885 [debug] [MainThread]: Connection 'list_MARKETING_marketing' was left open.
+[0m15:48:38.823896 [debug] [MainThread]: On list_MARKETING_marketing: Close
+[0m15:48:39.148642 [debug] [MainThread]: Connection 'snapshot.Marketing.campaign_snapshot' was properly closed.
+[0m15:48:39.148642 [info ] [MainThread]: 
+[0m15:48:39.149607 [info ] [MainThread]: Finished running 1 snapshot in 0 hours 0 minutes and 3.33 seconds (3.33s).
+[0m15:48:39.150619 [debug] [MainThread]: Command end result
+[0m15:48:39.192407 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\RajgokulRM\Documents\DE_FINAL\marketing\target\manifest.json
+[0m15:48:39.195745 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\RajgokulRM\Documents\DE_FINAL\marketing\target\semantic_manifest.json
+[0m15:48:39.204427 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\RajgokulRM\Documents\DE_FINAL\marketing\target\run_results.json
+[0m15:48:39.204427 [info ] [MainThread]: 
+[0m15:48:39.204427 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m15:48:39.204427 [info ] [MainThread]: 
+[0m15:48:39.204427 [error] [MainThread]:   Compilation Error in snapshot campaign_snapshot (snapshots\campaign_snapshot.sql)
+  'snapshot_check' is undefined. This can happen when calling a macro that does not exist. Check for typos and/or install package dependencies with "dbt deps".
+[0m15:48:39.204427 [info ] [MainThread]: 
+[0m15:48:39.204427 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m15:48:39.204427 [debug] [MainThread]: Command `dbt snapshot` failed at 15:48:39.204427 after 8.76 seconds
+[0m15:48:39.204427 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D732F4BB30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D73FF0F2F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D73FAED040>]}
+[0m15:48:39.204427 [debug] [MainThread]: Flushing usage events
+[0m15:48:40.076338 [debug] [MainThread]: An error was encountered while trying to flush usage events
